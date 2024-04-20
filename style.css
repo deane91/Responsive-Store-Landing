@@ -1,0 +1,190 @@
+
+/* Start general elements style */
+
+ul{
+    list-style-type: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(255, 251, 0);
+}
+
+a{
+    color: white;
+}
+
+button {
+    border-radius: 2px;
+    border: 0px;
+    padding: 10px;
+    
+}
+
+/* End general elements style */
+
+
+/* Start Logo style */
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Start Logo style */
+
+
+/* Start Navbar style */
+nav{
+    padding: 20px;
+    background-color: #0060AA;
+    color: white;
+}
+
+/* End Navbar style */
+
+
+/* Start Hero style */
+
+.hero{
+    color: rgb(255, 255, 255);
+    background-image: url('img/hero_watch.jpg');
+    padding: 50px;
+    height: 720px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "hero-title hero-img"
+}
+
+.hero-header{
+    padding: 10px;
+    grid-area: hero-title;
+}
+
+.hero-title{
+    font-weight:900;
+    padding: 10px;
+    
+}
+
+.hero-desc{
+    font-weight:500;
+    padding: 10px;
+}
+
+.hero-button{
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+}
+
+.hero-img{
+    padding: 10px;
+    grid-area: hero-img;
+}
+
+/* End Hero style */
+
+
+/* Start Product style */
+
+.product {
+    margin: 30px;
+}
+
+.card{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.title ,.description ,.shop-now {
+    margin: 10px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.shop-now{
+    font-weight: 500;
+}
+
+
+/* End Product style */
+
+
+/* Start footer style */
+
+footer{
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+}
+footer ul li{
+    margin: 5px;
+}
+/* End footer style */
+
+
+@media (max-width:920px) {
+    .hero{
+        color: rgb(255, 255, 255);
+        background-image: url('img/hero_watch.jpg');
+        padding: 10px;
+        height: 720px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        grid-template-areas: 
+        "hero-img"
+        "hero-title"
+    }
+    
+    .hero-header{
+        padding: 10px;
+        grid-area: hero-title;
+    }
+    
+    .hero-title{
+        font-weight:900;
+        padding: 1px;
+        
+    }
+    
+    .hero-desc{
+        font-weight:500;
+        padding: 10px;
+    }
+    
+    .hero-button{
+        font-weight: 600;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .hero-img{
+        width: 50%;
+        padding: 1px;
+        grid-area: hero-img;
+    }
+}
+
+@media (max-width:980px) {
+    .product .col-3 {
+        width: 33%; /* Two cards per row */
+        max-width: 33%;
+    }
+}
+@media (max-width:650px) {
+    .product .col-3 {
+        width: 50%; /* Two cards per row */
+        max-width: 50%; /* Two cards per row */
+        flex: 0 0 50%;
+    }
+}
+@media (max-width:480px) {
+    .col-3 {
+        width: 100%; /* Two cards per row */
+        max-width: 100%; /* Two cards per row */
+        flex: 0 0 100%;
+    }
+}
